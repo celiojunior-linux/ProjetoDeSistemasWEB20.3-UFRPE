@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DE CASTIGO</title>
+    <style>
+        p, h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        
+        h1{
+            font-size: 40px;
+            color: dodgerblue;
+        }
+        #container{
+            position: fixed;
+            top: 50%;
+            width: 500px;
+            height: 500px;
+            padding: 30px;
+            border: 2px dashed violet;
+            left: 50%;
+            background-color: wheat;
+            transform: translate(-50%, -50%);
+        }
+        .cr{
+            text-decoration: underline wavy red;
+        }
+
+        .r{
+            color: red;
+        }
+
+        #green{
+            color: mediumseagreen;
+        }
+        @media(max-width:768px){
+            #container{
+                width:80%;
+            }
+            p{
+                padding: 0px 20px;
+            }
+            h1{
+                padding: 0px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>DE CASTIGO</h1>
+        <p>A garotinha chega da escola em <b>prantos</b>:</p>
+        <p>- Mamãe, mamãe, <u class="cr">sniff</u>... <u class="cr">sniff</u>...</p>
+        <p>- O que foi minha <u>filha</u>?</p>
+        <p>- Hoje... na escola... me <s>botaram</s> puseram de <b>castigo</b>... <u class="cr">sniff</u></p>
+        <p class="r">- DE CASTIGO? <b>POR QUÊ</b></p>
+        <p>- Foi por uma coisa... <u class="cr">sniff...</u> <u>que eu não fiz</u>!</p>
+        <p>- Mas isso é um <b><u>absurdo</u></b>! Vamos lá, vou falar já com a <b><u>diretora</u></b>.</p>
+        <p>&lt; A mãe pega a mão da menina e &quot;arrasta-a&quot; para fora da casa.&gt;</p>
+        <p>Na rua, <s>olhando</s> vendo a filha um pouco mais calma, <u>pergunta</u>:</p>
+        <p>- E o que foi que você <b>não</b> fez, minha fílha?</p>
+        <p>E a menina</p>
+        <p id="green">- A lição de casa... <u class="cr">buááááá</u>...</p>
+    </div>
+</body>
+</html>
