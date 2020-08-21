@@ -43,7 +43,7 @@
           margin-bottom:30px;
         }
         #container{
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 200, 0.4);
             padding:20px;
             width: 60%;
             margin:auto;
@@ -53,11 +53,9 @@
         fieldset{
             display: flex;
             flex-direction: column;
-            justify-content:space-between;
         }
         input{
-            width: 100%;
-
+            flex-grow: 1;
         }
 
         input[type=radio]{
@@ -88,17 +86,26 @@
             transform: scale(1.1);
         }
 
+        form{
+          width:  100%;
+        }
+
         #gender-selector{
-          display: flex;
+          display: grid;
+          grid-template-columns: 60px 10px;
           margin:30px;
         }
+
 
     </style>
 </head>
 <body>
     <div id="container">
+
         <h1>Create Account</h1>
+
         <form name="beautyview-info" method="POST" action="http://www.atdsistemas.com.br/web/formulario/">
+           
             <fieldset id="personal-information">
                 <legend>Informações Pessoais</legend>
                 <label for="nome">First Name</label>
@@ -112,15 +119,20 @@
                 <br class="sep">
                 <label for="sexo">Gender:</label>
                 <div id="gender-selector">
-                    <br>
-                    <label for="male">Male</label>
-                    <input type="radio" id="male" name="sexo">
-                    <br>
-                    <label for="female" name="sexo">Female</label>
-                    <input type="radio" id="female" name="sexo">
-                    <br>
-                    <label for="undefined" name="sexo">Undefined</label>
-                    <input type="radio" id="undefined" name="sexo">
+                    <div id="choice">
+                      <label for="male">Male</label>
+                      <br>
+                      <label for="female" name="sexo">Female</label>
+                      <br>
+                      <label for="undefined" name="sexo">Undefined</label>
+                    </div>
+                    <div id="gend">
+                      <input type="radio" id="male" name="sexo">
+                      <br>
+                      <input type="radio" id="female" name="sexo">
+                      <br>
+                      <input type="radio" id="undefined" name="sexo">
+                    </div>
                 </div>
                 <br class="sep">
                 <label>Academic level formation:</label>
@@ -144,6 +156,7 @@
                 <br>
                 <textarea name="descricao" rows="1" cols="40"></textarea>
             </fieldset>
+
             <fieldset id="social-network">
                 <legend>Redes Sociais</legend>
                 <label for="twitter">Twitter:</label>
@@ -155,6 +168,7 @@
                 <label for="facebook">Facebook:</label>
                 <input type="text" name="facebook">
             </fieldset>
+
             <fieldset id="login-information">
                 <legend>Informações de Login</legend>
                 <label for="email">Email:</label>
@@ -166,6 +180,7 @@
                 <label for="lembrar">Remember-me</label>
                 <input type="radio" name="lembrar">
             </fieldset>
+
             <div id="button-panel">
                 <button type="reset">Clear Fields</button>
                 <button type="submit">Send Data</button>
