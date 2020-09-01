@@ -143,3 +143,41 @@ h1{
 .box img{
     max-width: 500px;
 }
+
+@media(max-width: 768px){
+    .box{
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        padding: 20px 0px;
+        text-align: center;
+    }
+    .box div{
+        width: 100%;
+    }
+
+    .box p{
+        text-align: left;
+        margin: 30px;
+    }
+
+    .box img{
+        max-width: 100%;
+    }
+
+    #container{
+        width: 100%;
+        padding: 0;
+        height: max-content;
+    }
+
+    #mobile-mark{
+        padding: 10%;
+    }
+
+    #logo{
+        display: block;
+        margin: 30px auto;
+        width: 90%;
+    }
+}
