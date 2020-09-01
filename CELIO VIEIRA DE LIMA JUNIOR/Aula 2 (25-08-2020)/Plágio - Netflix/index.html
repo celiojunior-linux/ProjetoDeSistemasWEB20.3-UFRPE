@@ -11,18 +11,20 @@
         <img id="logo" src="./assets/images/netflix-logo.png" alt="netflix logo">
         <div id="container">
             <h1>Sign Up</h1>
-            <input type="text" class="netflix-entry" placeholder="Email or phone number">
-            <input type="password" class="netflix-entry" placeholder="Password">
-            <div id="confirm">
-                <button class="netflix-button">Sign Up</button>
-                <div style="grid-area: d">
-                    <input name="mark-remember" id="remember-me" type="checkbox" checked class="netflix-checkbox">
-                    <label class="label" for="remember-me">Rememeber me</label>
+            <form>
+                <input type="text" class="netflix-entry" placeholder="Email or phone number">
+                <input type="password" class="netflix-entry" placeholder="Password">
+                <div id="confirm">
+                    <button class="netflix-button">Sign Up</button>
+                    <div style="grid-area: d">
+                        <input name="mark-remember" id="remember-me" type="checkbox" checked class="netflix-checkbox">
+                        <label class="label" for="remember-me">Rememeber me</label>
+                    </div>
+                    <div style="grid-area: h; text-align: right;">
+                        <a href="#" class="label">Want some help?</a>
+                    </div>
                 </div>
-                <div style="grid-area: h; text-align: right;">
-                    <a href="#" class="label">Want some help?</a>
-                </div>
-            </div>
+            </form>
             <div id="facebook-login">
                 <img class="icon" src="./assets/images/facebook-logo.png">
                 <a class="label" for="face">Connect by using facebook</a>
