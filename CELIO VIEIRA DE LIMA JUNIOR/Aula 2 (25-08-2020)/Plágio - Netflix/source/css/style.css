@@ -1,0 +1,145 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #222;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.normal-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #888;
+    font-weight: lighter;
+}
+
+.bold-text:hover{
+    text-decoration: underline;
+}
+
+.bold-text{
+    color: white;
+    font-weight: bolder;
+}
+
+.icon{
+    width: 32px;
+}
+
+.label{
+    color: #888;
+    vertical-align: super;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.label:hover{
+    text-decoration: underline;
+}
+
+.netflix-button{
+    grid-area: b;
+    width: 100%;
+    height: 54px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+                    "b b"
+                    "d h";
+    row-gap: 10px;
+}
+
+#facebook-login{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#help-box{
+    display: flex;
+    align-items: center;
+}
+
+.netflix-entry{
+    text-indent: 20px;
+    width: 100%;
+    height: 54px;
+    background-color: #444;
+    border: 1px solid #222;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom:20px;
+    color: white;
+}
+
+.netflix-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#banner{
+    background-image: url("/assets/images/netflix_back.jpg");
+    background-position-x: 50%;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: max-content;
+    padding: 20px 0px;
+}
+
+#container{
+    width: 450px;
+    background-color: rgba(0,0,0,0.8);
+    height: 600px;
+    margin: 0% auto;
+    padding: 20px 60px;
+}
+
+#logo{
+    padding: 0 20px;
+    width: 200px;
+    filter: brightness(150%);
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    width: 100%;
+    min-height: 500px;
+    height: max-content;
+    margin: 10px auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.box div{
+    width: 600px;
+}
+.box h1{
+    font-size: 64px;
+}
+.box p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.box img{
+    max-width: 500px;
+}
