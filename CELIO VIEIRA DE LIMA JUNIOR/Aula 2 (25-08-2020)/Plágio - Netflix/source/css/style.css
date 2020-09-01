@@ -94,7 +94,7 @@ h1{
 }
 
 #banner{
-    background-image: url("/assets/images/netflix_back.jpg");
+    background-image: url("../../assets/images/netflix-back.jpg");
     background-position-x: 50%;
     background-size: cover;
     width: 100%;
