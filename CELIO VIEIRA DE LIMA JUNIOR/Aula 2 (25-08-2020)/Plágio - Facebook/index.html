@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./source/styles/style_desktop.css">
+    <link rel="stylesheet" href="./source/styles/style_tablet.css" media="(max-width:992px)">
+    <link rel="stylesheet" href="./source/styles/style_mobile.css" media="(max-width:768px)">
+    <title>Fakebook</title>
+</head>
+<body>
+    <div id="fake-panel">
+        <h1>fakebook</h1>
+        <form action="#">
+            <span>
+                <label>Email or phone-number</label>
+                <br>
+                <input type="text">
+            </span>
+            <span>
+                <label>Password</label>
+                <br>
+                <input type="password">
+                <br>
+                <a href="#">forgot password?</a>
+            </span>
+            <span>
+                <p></p>
+                <button>Login</button>
+            </span>
+        </form>
+    </div>
+    <div id="contents">
+        <span id="banner">
+            <h1>Fakebook helps you connect and share with the people in your life.</h1>
+            <img src="./assets/images/facebook-connections.jpg" alt="">
+        </span>
+        <span id="form">
+            <h1>Create an Account</h1>
+            <h3>It's fast and easy.</h3>
+            <form action="#">
+                <span>
+                    <input type="text"  placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                </span>
+                <input type="text" placeholder="Phone number or email">
+                <input type="password" placeholder="Password">
+                <label><h2>Birth date</h2></label>
+                <input type="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                <label><h2>Gender</h2></label>
+                <span id="gender-table">
+                    <span>
+                        <input type="radio" name="gender" id="">
+                        <label for="">Female</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="gender" id="">
+                        <label for="">Male</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="gender" id="">
+                        <label for="">Personalized</label>
+                    </span>
+                </span>
+                <p>By clicking Register, <a href="#">you agree to our Terms, Data Policy and Cookie Policy.</a> You can receive SMS notifications and you can cancel this whenever you want.</p>
+                <button id="subscribe-button">Register</button>
+            </form>
+        </span>
+    </div>
+    
+</body>
+</html>

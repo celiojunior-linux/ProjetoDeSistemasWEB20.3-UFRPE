@@ -1,0 +1,146 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+
+#fake-panel{
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: "t f";
+    background-color: #3b5998;
+    align-content: flex-end;
+    width: 100%;
+    height: 72px;
+}
+
+#fake-panel h1{
+    color: white;
+    padding-left:10%;
+    margin:0;
+    font-family: Arial;
+    font-weight: 1000;
+}
+
+#fake-panel form{
+    grid-area: f;
+    display: flex;
+}
+
+#fake-panel form label{
+    color: white;
+    font-size:12px;
+    font-weight: 600;
+}
+
+#fake-panel span{
+    display: block;
+    margin-left:5px;
+}
+
+#fake-panel a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 1px;
+}
+
+#fake-panel button{
+    color: white;
+    height: 24px;
+    border: 1px solid #333;
+    background-color: #4169e1;
+    font-size: 13px;
+}
+
+#contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+#banner{
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+#banner img{
+    width: 100%;
+}
+
+#banner h1{
+    color: #3b5998;
+    font-size:  24px;
+}
+
+#form{
+    margin: 0 10%;
+}
+
+#form h1{
+    font-size: 38px;
+}
+
+#form h3{
+    color: #999;
+}
+
+#form form{
+    display: flex;
+    flex-direction: column; 
+}
+
+#form form input{
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    text-indent: 20px;
+    padding: 10px 0;
+    margin: 5px 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#form span{
+    display: inline-flex;
+    justify-content: space-between;
+}
+#form span input{
+    flex-grow: 0;
+    width: 49%;
+
+}
+
+#gender-table{
+    justify-content: flex-start;
+    width: 80%;
+}
+#gender-table span label{
+    padding: 0 20px;
+}
+
+#subscribe-button{
+    background-color: #56953e;
+    border: 1px solid #333;
+    font-size: 18px;
+    color: white;
+    font-weight: 1000;
+    padding: 5px;
+    width: 50%;
+}
+
+#form p{
+    width: 80%;
+    font-size: 12px;
+}
