@@ -12,7 +12,7 @@
 <body>
     <div id="fake-panel">
         <h1>fakebook</h1>
-        <form action="#">
+        <form action="#" class="mobile-hidden">
             <span>
                 <label>Email or phone-number</label>
                 <br>
@@ -23,31 +23,50 @@
                 <br>
                 <input type="password">
                 <br>
-                <a href="#">forgot password?</a>
+                <a href="#">forgotten password?</a>
             </span>
             <span>
                 <p></p>
-                <button>Login</button>
+                <button>Log In</button>
             </span>
         </form>
     </div>
     <div id="contents">
-        <span id="banner">
+        <span class="desktop-hidden info-message">
+            <span>
+                <img src="./assets/images/facebook-icon.png" alt="" srcset="">
+            </span>
+            <span>
+                <p>Get fakebook for android and browse faster.</p>
+            </span>
+        </span>
+        <form action="#" class="form desktop-hidden">
+            <span class="mobile-form">
+                <input class="fake-input" type="text" name="" id="" placeholder="Email address or phone number">
+                <hr>
+                <input class="fake-input" type="password" name="" id="" placeholder="Password">
+            </span>
+            <button class="mobile-button">Log In</button>
+            <button class="mobile-small-button" type="button">Create New account</button>
+            <br>
+            <a href="#" class="help-link">Forgotten password? <sup>.</sup> Help Centre</a>
+        </form>
+        <span class="mobile-hidden" id="banner" >
             <h1>Fakebook helps you connect and share with the people in your life.</h1>
             <img src="./assets/images/facebook-connections.jpg" alt="">
         </span>
-        <span id="form">
+        <span class="mobile-hidden form signup">
             <h1>Create an Account</h1>
             <h3>It's fast and easy.</h3>
             <form action="#">
                 <span>
-                    <input type="text"  placeholder="First name">
-                    <input type="text" placeholder="Last name">
+                    <input class="fake-input" type="text"  placeholder="First name">
+                    <input type="text" class="fake-input" placeholder="Last name">
                 </span>
-                <input type="text" placeholder="Phone number or email">
-                <input type="password" placeholder="Password">
+                <input type="text" class="fake-input" placeholder="Phone number or email">
+                <input type="password" class="fake-input" placeholder="Password">
                 <label><h2>Birth date</h2></label>
-                <input type="date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                <input type="date" class="fake-input">
                 <label><h2>Gender</h2></label>
                 <span id="gender-table">
                     <span>
@@ -67,6 +86,19 @@
                 <button id="subscribe-button">Register</button>
             </form>
         </span>
+        <div class="desktop-hidden footer">
+            <div>
+                <span>
+                    <a href="#" class="help-link">English (UK)</a>
+                </span>
+                <span>
+                    <a href="#" class="help-link">Portuguese(BR)</a>
+                    <br>
+                    <a href="#" class="help-link">Tupi-Guarani</a>
+                </span>
+            </div>
+            <p>fakebook(c)2020</p>
+        </div>
     </div>
     
 </body>

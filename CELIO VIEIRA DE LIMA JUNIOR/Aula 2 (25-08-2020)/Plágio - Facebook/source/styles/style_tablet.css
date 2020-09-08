@@ -1,3 +1,55 @@
 body{
-    background-color: white;
+
+}
+
+#contents{
+    display: block;
+    margin: auto;
+}
+
+#fake-panel{
+    text-align: center;
+    display: block;
+    height: 50vh;
+    min-height: 350px;
+    font-size: 30px;
+    padding: 0;
+}
+
+#fake-panel h1{
+    padding: 0;
+}
+
+
+#fake-panel form{
+    margin: auto;
+    width: 90%;
+    display: block;
+}
+
+#fake-panel input{
+    width: 100%;
+    height: 30px;
+}
+
+#fake-panel button{
+    width: 50%;
+    height: 48px;
+}
+
+#banner{
+    display: none !important;
+}
+
+#contents{
+    width: 90%;
+    margin: auto;
+}
+
+.form form{
+    width: 100%;
+}
+
+#contents{
+    height: 100vh;
 }

@@ -84,26 +84,27 @@ button{
     font-size:  24px;
 }
 
-#form{
-    margin: 0 10%;
+.form{
+    margin: 0;
 }
 
-#form h1{
+.form h1{
     font-size: 38px;
 }
 
-#form h3{
+.form h3{
     color: #999;
 }
 
-#form form{
+.form form{
     display: flex;
+    width: 95%;
     flex-direction: column; 
 }
 
-#form form input{
+.fake-input{
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 5px !important;
     font-size: 16px;
     text-indent: 20px;
     padding: 10px 0;
@@ -112,11 +113,11 @@ button{
     flex-grow: 1;
 }
 
-#form span{
-    display: inline-flex;
+.form span{
+    display: flex;
     justify-content: space-between;
 }
-#form span input{
+.form span input{
     flex-grow: 0;
     width: 49%;
 
@@ -127,7 +128,7 @@ button{
     width: 80%;
 }
 #gender-table span label{
-    padding: 0 20px;
+    margin-right: 50px;
 }
 
 #subscribe-button{
@@ -140,7 +141,19 @@ button{
     width: 50%;
 }
 
-#form p{
+.form p{
     width: 80%;
     font-size: 12px;
+}
+
+.mobile-login{
+    display: none;
+}
+
+.desktop-hidden{
+    display: none !important;
+}
+
+.fake-input{
+    border-radius: 0;
 }
