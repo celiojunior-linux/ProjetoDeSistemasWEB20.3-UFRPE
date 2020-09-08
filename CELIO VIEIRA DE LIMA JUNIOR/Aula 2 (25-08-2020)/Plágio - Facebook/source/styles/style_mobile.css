@@ -27,6 +27,7 @@ h1{
     display: block;
     width: 90%;
     margin: auto;
+    height: max-content;
 }
 
 #gender-table span{
