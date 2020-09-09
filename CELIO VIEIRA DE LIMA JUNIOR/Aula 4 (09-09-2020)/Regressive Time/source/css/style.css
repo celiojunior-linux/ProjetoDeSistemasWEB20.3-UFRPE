@@ -1,0 +1,75 @@
+@font-face{
+    src: url("../../assets/fonts/DS-DIGI.ttf");
+    font-family: "DSDIGI";
+}
+
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../../assets/img/backgroundjpg.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#timer{
+    text-align: center;
+    color: rgba(0,255,0, 0.9);
+    position: fixed;
+    background-color: rgba(114, 24, 24, 0.5);
+    border: 2px solid yellow;
+    width: 480px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#timer h1{
+    border-radius: 5px;
+    font-family: "DSDIGI";
+    margin: 30px auto;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 300px;
+    max-width: max-content;
+    font-size: 64px;
+}
+
+#timer button{
+    color: white;
+    padding:0;
+    vertical-align: middle;
+    font-size:16px;
+    width: 64px;
+    height: 32px;
+    background-color: rgb(143, 34, 34);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#timer input{
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+    width: 128px;
+    padding:0;
+    height: 30px;
+}
+
+#timer input:disabled{
+    opacity: 0.2;
+}
+
+#timer span{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    justify-content: space-between;
+    margin: auto;
+    
+}
