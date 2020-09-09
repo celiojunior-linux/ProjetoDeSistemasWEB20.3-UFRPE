@@ -19,6 +19,7 @@ class Timer{
         this.updateDisplay();
         this.button.click(this.actionStart.bind(this));
         this.input.keyup(this.setTime.bind(this))
+        this.input.click(this.setTime.bind(this))
         this.setTime();
     }
 
