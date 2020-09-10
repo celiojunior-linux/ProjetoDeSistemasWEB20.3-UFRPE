@@ -1,7 +1,7 @@
 class Timer{
 
     constructor(buttonId = "#timer-button", pauseButtonId = "#pause-button", timerDisplayId = "#timer-display", timerInputId = "#timer-input"){
-        this.optPaused  = ["Pause","Play"]
+        this.optPaused  = ["Pause","Play"];
         this.options = ["►", "■"];
         this.counting = false;
         this.time = 0; // Time input in minutes
