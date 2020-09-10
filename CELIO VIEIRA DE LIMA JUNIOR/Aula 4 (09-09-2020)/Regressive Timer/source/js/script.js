@@ -124,6 +124,8 @@ class Timer{
      updatePausedButton(){
          if (!this.counting){
              this.pausedButton.attr("disabled",true);
+             this.paused = false;
+             this.pausedButton.text(this.optPaused[1]);
         }else{
             this.pausedButton.attr("disabled", false);
         }
