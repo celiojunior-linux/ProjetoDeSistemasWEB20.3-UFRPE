@@ -3,13 +3,22 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    text-align: center;
+    color: white;
 }
 
-#ua-gallery{
-    position: fixed;
+.gallery-box{
+    width: 100vw;
+    height: 100vh;
+}
+
+.ua-gallery{
+    text-align: center;
+    position: relative;
     min-width: 640px;
-    min-height: 480px;
     width: max-content;
+    min-height: 480px;
     height: 70%;
     background-color: #444;
     left: 50%;
@@ -18,12 +27,13 @@ body{
     border-radius: 10px;
 }
 
-#ua-gallery .ua-image{
+.ua-gallery .ua-image{
+    margin: auto;
     height: 100%;
     border-radius: inherit;
 }
 
-#ua-gallery .ua-controls{
+.ua-gallery .ua-controls{
     border-radius: inherit;
     position: fixed;
     display: flex;
@@ -33,7 +43,7 @@ body{
     justify-content: space-between;
 }
 
-#ua-gallery .ua-controls button{
+.ua-gallery .ua-controls button{
     border-radius: inherit;
     opacity: 0.5    ;
     background-color: #555;
@@ -50,11 +60,11 @@ body{
     transition-duration: 200ms;
 }
 
-#ua-gallery .ua-controls button:active{
+.ua-gallery .ua-controls button:active{
     transform: scale(0.9);
 }
 
-#ua-gallery .ua-controls button:hover{
+.ua-gallery .ua-controls button:hover{
     background-color: #fff;
     color: #555;
 }
@@ -86,7 +96,7 @@ body{
     }
 }
 
-#ua-gallery .current{
+.ua-gallery .current{
     font-family: 'Times New Roman', Times, serif;
     position: fixed;
     width: 100%;
@@ -100,4 +110,14 @@ body{
 
 .slide{
     animation: blink 1s 1;
+}
+
+.title{
+    width: 100%;
+    background-color: black;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0 auto;
+    font-size: 48px;
 }

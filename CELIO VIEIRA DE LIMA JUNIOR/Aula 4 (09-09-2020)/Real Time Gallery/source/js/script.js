@@ -1,19 +1,20 @@
 class InteractiveGallery{
 
-    constructor(galleryId, gallerySize, galleryExtension = "jpg"){
+    constructor(galleryId, gallerySize, autoScroll=true,  sleep=3000, galleryExtension = "jpg"){
         this.gallery = $(galleryId);
         this.leftButton  = this.gallery.children("span").children(".left-button");
         this.rightButton = this.gallery.children("span").children(".right-button");
         this.counter = this.gallery.children(".current");
         this.image = this.gallery.children("img");
         this.selected = 0;
-        this.galleryLenght = 4
         this.path = `./assets/${galleryId.replace(/#/,"")}/img`;
         this.gallerySize = gallerySize - 1;
         this.extension  = galleryExtension;
+        this.sleep = sleep
+        this.autoScroll = autoScroll;
         this.setImage();
         this.configureButtons();
-        this.configureAutoPass();
+        this.configureAutoScroll();
     }
 
     setImage(selected = null){
@@ -30,8 +31,7 @@ class InteractiveGallery{
     
     navigatePrevious(reset=false){
         if (reset){
-            clearInterval(this.interval);
-            this.configureAutoPass();
+            this.resetAnimation();
         }
         this.selected -= 1;
         if (this.selected < 0){
@@ -41,9 +41,8 @@ class InteractiveGallery{
     }
 
     navigateNext(reset=false){
-        if (reset){
-            clearInterval(this.interval);
-            this.configureAutoPass();
+        if(reset){
+            this.resetAnimation();
         }
         this.selected += 1;
         if (this.selected > this.gallerySize){
@@ -52,13 +51,20 @@ class InteractiveGallery{
         this.setImage();
     }
 
+    resetAnimation(){
+        clearInterval(this.interval);
+        this.configureAutoScroll();
+    }
+
     configureButtons(){
         this.leftButton.click(this.navigatePrevious.bind(this, true));
         this.rightButton.click(this.navigateNext.bind(this, true));
     }
 
-    configureAutoPass(){
-        this.interval = setInterval(this.updateImage.bind(this),3000)
+    configureAutoScroll(){
+        if (this.gallerySize > 1 && this.autoScroll){
+            this.interval = setInterval(this.updateImage.bind(this),this.sleep)
+        }
     }
 
     updateImage(){

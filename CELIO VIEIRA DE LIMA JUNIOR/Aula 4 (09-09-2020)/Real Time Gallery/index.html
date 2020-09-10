@@ -9,16 +9,31 @@
     <title>Ultimate Auto Gallery</title>
 </head>
 <body>
-    <div id="ua-gallery">
-        <img class="ua-image slide" src="./">
-        <h1  class="current"></h1>
-        <span class="ua-controls">
-            <button value="left" class="left-button"><</button>
-            <button class="right-button">></button>
-        </span>
-        <script>
-            var galerry = new InteractiveGallery("#ua-gallery", 5);
-        </script>
+    <div class="gallery-box">
+        <div id="ua-gallery" class="ua-gallery">
+            <img class="ua-image slide">
+            <h1  class="current"></h1>
+            <span class="ua-controls">
+                <button value="left" class="left-button"><</button>
+                <button class="right-button">></button>
+            </span>
+            <h1 class="title">Automatic Gallery</h1>
+        </div>
     </div>
+    <div class="gallery-box">
+        <div id="sleepy-gallery" class="ua-gallery">
+            <img class="ua-image slide">
+            <h1  class="current"></h1>
+            <span class="ua-controls">
+                <button value="left" class="left-button"><</button>
+                <button class="right-button">></button>
+            </span>
+            <h1 class="title">Sleepy Gallery</h1>
+        </div>
+    </div>
+    <script>
+        var gallery = new InteractiveGallery("#ua-gallery", 5, true, 3000);
+        var galleryII = new InteractiveGallery("#sleepy-gallery", 5, false);
+    </script>
 </body>
 </html>
