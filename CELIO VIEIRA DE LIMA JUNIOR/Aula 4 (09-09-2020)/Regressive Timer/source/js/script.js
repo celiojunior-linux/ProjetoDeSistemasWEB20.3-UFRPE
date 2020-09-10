@@ -42,13 +42,19 @@ class Timer{
 
     makeTimer(){
         this.hours   = (this.time / 60);
-        this.minutes = Math.round((this.hours - parseInt(this.hours))*60);
-        this.seconds = parseInt(this.minutes - parseInt(this.minutes));
+        this.minutes = ((this.hours - parseInt(this.hours))*60);
+        if (String(this.time).includes(".")){
+            this.seconds = (this.minutes - parseInt(this.minutes))*60;
+        }else{
+            this.seconds = 0;
+        }
         this.hours = parseInt(this.hours);
+        this.minutes = parseInt(this.minutes);
+        this.seconds = parseInt(this.seconds);
     }
 
     setTime(){
-        if (parseInt(this.input.val()) > parseInt(this.input.attr("min")) && parseInt(this.input.val()) < parseInt(this.input.attr("max"))){   
+        if (parseInt(this.input.val()) >= parseInt(this.input.attr("min")) && parseInt(this.input.val()) <= parseInt(this.input.attr("max"))){   
             this.time = this.input.val();
         }else{
             this.time = 0;
@@ -73,6 +79,7 @@ class Timer{
         this.clockLogic();
         if (this.hours == 0 && this.minutes == 0 && this.seconds == 0){
             this.actionStart();
+            alert("The time has just ended up.");
         }else{
             this.updateDisplay();
         }
