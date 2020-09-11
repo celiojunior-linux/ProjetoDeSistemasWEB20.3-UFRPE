@@ -28,7 +28,6 @@ body{
 }
 
 .ua-gallery .ua-image{
-
     height: 100%;
     border-radius: inherit;
 }
@@ -83,6 +82,7 @@ body{
         opacity: 0;
         margin-left: 0%;
         transform: scale(1.1);
+        transform: rotate(-2deg);
     }
     30%{
         margin-left: 5%;
@@ -109,7 +109,7 @@ body{
 }
 
 .slide{
-    animation: blink 1s 1;
+    animation: blink 2s 1;
 }
 
 .title{
