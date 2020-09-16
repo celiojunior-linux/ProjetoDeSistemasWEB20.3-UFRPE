@@ -1,0 +1,123 @@
+@font-face{
+    src: url("./../../assets/font/DS-DIGIB.TTF");
+    font-family: "digital";
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: black;
+    background-image: url("./../../assets/img/background.jpg");
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.planet-stats{
+    display: grid;
+    max-width: 900px;
+    width: 90%;
+    column-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    min-height: 300px;
+    height: max-content;
+    background-color: rgba(0,0,0, 0.7);
+    margin: 20px auto;
+    grid-template-columns: 2;
+    padding: 20px;
+}
+
+#planet-list{
+    margin: 100px auto;
+}
+
+.mega-title{
+    text-align: center;
+    color: #0f0;
+    font-family: "digital";
+    text-shadow: 1px 1px 1px #00f;
+    font-size: 70px;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.topic-title{
+    text-align: left;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #0f0;
+}
+
+.inline{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.planet-face{
+    width: 70%;
+}
+
+#menu-content{
+    display: grid;
+    column-gap: 2px;
+    background-color: black;
+    border-radius: 20px;
+    grid-template-columns: 10fr 1fr;
+    height: 40px;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+#menu-content input[type=search]{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    text-indent: 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+#menu-content button{
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.not-found{
+    text-align: center;
+    font-size: 60px;
+}
+
+@media(max-width: 768px){
+    body{
+        padding: 5px;
+    }
+    .planet-stats{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+}
