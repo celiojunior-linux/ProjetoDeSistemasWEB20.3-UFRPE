@@ -121,3 +121,24 @@ h1{
         padding: 0;
     }
 }
+
+.loading{
+    width:100%;
+    animation-name: rotating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+
+}
+
+#loading{
+    width: 60px;
+    margin: 100px auto;
+}

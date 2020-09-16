@@ -5,6 +5,7 @@
 var link =  "https://api.arcsecond.io/exoplanets/";
 
 function load_data(search=false, url = link){
+    $("#loading").css("display", "block")
     fetch(url, { method:"GET"})
     .then(res => res.json())
     .then(data => {
@@ -12,7 +13,7 @@ function load_data(search=false, url = link){
        for(let i =0; i < data["results"].length - 1; i ++){
             element = data["results"][i];
             if (search && $("#search").val()){
-                if(!element.name.toUpperCase().includes($("#search").val().toUpperCase())){
+                if(!element.name.toUpperCase().includes($("#search").val().toUpperCase()) && !$("#search").val().toUpperCase().includes(element.name.toUpperCase())){
                     continue;
                 }
             }
@@ -64,6 +65,7 @@ function load_data(search=false, url = link){
        if ($("#planet-list").is(":empty")){
            $("#planet-list").append("<h1 class='not-found'> Nenhum resultado encontrado! </h1>")
        }
+       $("#loading").css("display", "none")
     })
 }
 
