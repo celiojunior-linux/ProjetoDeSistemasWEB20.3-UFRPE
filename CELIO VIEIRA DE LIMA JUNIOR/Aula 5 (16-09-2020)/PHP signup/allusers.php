@@ -19,18 +19,34 @@
                     echo "<ul class='user-list'>";
                     foreach($_SESSION["all_users"] as $user){
                         echo "<li>".
-                                "<span class='user-column'>".
-                                    "<h3>Name: </h3>".
-                                    "<p>".$user["name"]."</p>".
-                                "</span>".
-                                "<span class='user-column'>".
-                                    "<h3>Phone: </h3>".
-                                    "<p>".$user["phone"]."</p>".
-                                "</span>".
-                                "<span class='user-column'>".
-                                    "<h3>Password: </h3>".
-                                    "<p>".$user["password"]."</p>".
-                                "</span>".
+                                "<div>".
+                                    "<span class='user-column'>".
+                                        "<h3>Name: </h3>".
+                                        "<p>".$user["name"]."</p>".
+                                    "</span>".
+                                    "<span class='user-column'>".
+                                        "<h3>Phone: </h3>".
+                                        "<p>".$user["phone"]."</p>".
+                                    "</span>".
+                                    "<span class='user-column'>".
+                                        "<h3>Email: </h3>".
+                                        "<p>".$user["email"]."</p>".
+                                    "</span>".
+                                "</div>".
+                                "<div>".
+                                    "<span class='user-column'>".
+                                        "<h3>Genre: </h3>".
+                                        "<p>".$user["genre"]."</p>".
+                                    "</span>".
+                                    "<span class='user-column'>".
+                                        "<h3>City: </h3>".
+                                        "<p>".$user["city"]."</p>".
+                                    "</span>".
+                                    "<span class='user-column'>".
+                                        "<h3>State: </h3>".
+                                        "<p>".$user["state"]."</p>".
+                                    "</span>". 
+                                "</div>".
                             "</li>";
                     }
                     echo "</ul>";

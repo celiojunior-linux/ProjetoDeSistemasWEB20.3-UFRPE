@@ -13,8 +13,17 @@
             <h1>Sign Up a new user.</h1>
             <form class="form" action="./saveuser.php" method="POST">
                 <input name="name"     id="" placeholder="Name"         type="text"     required><br>
-                <input name="password" id="" placeholder="Password"     type="password" required><br>
+                <input name="email" id="" placeholder="Email"     type="email" required><br>
                 <input name="phone"    id="" placeholder="Phone number" type="tel"      required>
+                <h3>Genre</h3>
+                <select name="genre">
+                    <option value='male'>Male</option>
+                    <option value='female'>Female</option>
+                    <option value='undefined'>Undefined</option>
+                </select>
+                <hr>
+                <input name="city"    id="" placeholder="City" type="tel"      required>
+                <input name="state"   id="" placeholder="State" type="tel"     required>
                 <button type="submit">Save</button>
             </form>
         </span>
