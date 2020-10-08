@@ -1,0 +1,288 @@
+.no-margin, h1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./../assets/img/bg.png");
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+button{
+    cursor: pointer;
+}
+
+#menu-bar{
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    min-height: 64px;
+}
+
+.divided-cells{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-options{
+    display: flex;
+}
+
+.menu-options li{
+    list-style: none;
+    padding: 20px;
+}
+.menu-options a{
+    color: white;
+    text-decoration: none;
+}
+
+.styled-link{
+    color: white;
+    text-decoration: none;
+}
+
+.menu-options a:hover{
+    color: red;
+}
+
+.customform{
+    margin: 10px;
+}
+.customform span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customform span label{
+    width: 20%;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #444;
+}
+
+.customform span input{
+    text-indent: 4px;
+    border-radius: 5px;
+    border:1px dotted #ccc;
+    width: 80%;
+    height: 24px;
+}
+
+.centered-box{
+    position: absolute;
+    background-color: #fff;
+    border: 1px dotted #222;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formbox{
+    width: 400px;
+    height: 250px;
+}
+
+#page-footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#page-footer h3{
+    padding: 0 20px;
+    color: #fff;
+}
+
+#page-contents{
+
+}
+
+#page-contents h1, h3, h5{
+    color: #444;
+}
+.centered-contents{
+    margin: 0 auto;
+    padding: 100px;
+    width: 900px;
+    background-color: rgba(200,200,200,0.7);
+    min-height: 100%;
+    min-height: 100vh;
+    border: 1px dotted #222;
+}
+
+.transparent{
+    opacity: 95%;
+}
+
+.anyimage{
+    width: 60%;
+    margin: 0 auto;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.anyimage:active{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+    width: 80%;
+}
+
+.centered-text{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.centered-image{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+.button-menu{
+    display: flex;
+    width: 800px;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.button-menu button{
+    width: 150px;
+    height:64px;
+}
+
+.spaced{
+    margin: 50px auto;
+}
+
+.spaced-on-top{
+    margin-top: 50px;
+}
+
+.modern-button{
+    background-color: #222;
+    color: #fff;
+    border: 1px dotted #fff;
+    width: 140px;
+    height: 24px;
+}
+
+.modern-button-color{
+    background-color: #222;
+    color: #fff;
+    border: 1px dotted #fff;
+}
+
+.centered-button{
+    margin: auto;
+}
+
+.task{
+    text-align:center;
+    width: 100%;
+    min-height: 300px;
+    height: max-content;
+    background-color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.task h1{
+    color: #fff !important;
+}
+
+.task span{
+    width: 450px;
+}
+
+.task span div{
+    width: 100%;
+    overflow-x: auto;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #111;
+    color: #fff;
+}
+.task span div p{
+    padding: 10px;
+}
+.task h3{
+    color: #ccc;
+}
+
+.wide{
+    width: 100%;
+}
+.styled-input{
+    border: 1px dotted #ccc;
+    min-height: 32px;
+    border-radius: 5px;
+    font-family: "Arial Rounded MT Bold";
+}
+
+.sbs-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sbs-menu-thin{
+    display: flex;
+    margin: auto;
+    width: max-content;
+}
+.sbs-menu *{
+    width: 100px;
+
+}
+
+@media(max-width:768px){
+    .centered-contents{
+        width: 100%;
+        padding: 150px 5px;
+    }
+    .button-menu{
+        display: flex;
+        width: max-content;
+        height:max-content;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .centered-image{
+        width: 80vw;
+    }
+    h1{
+        margin: 10px;
+    }
+
+    p{
+        margin: 10px;
+    }
+
+    .task{
+        padding:2px;
+    }
+}

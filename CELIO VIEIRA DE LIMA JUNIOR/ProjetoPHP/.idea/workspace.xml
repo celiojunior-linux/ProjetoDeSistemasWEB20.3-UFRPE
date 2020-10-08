@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02ccab2a-06a2-4eb1-95cd-6fb8f371e428" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ProjetoPHP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/dumb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/snow_lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/work_hard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/IController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/TaskController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/TaskDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/UserDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/connect_database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/interfacedao/ITaskDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/dao/interfacedao/IUserDAO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/vo/TaskVO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/vo/UserVO.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/auth/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/auth/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/common/about_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/common/home_page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/task/task_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/task/task_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/task/task_new.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/template/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/template/menu_bar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/user/user_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitmodules" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1iYW1Qv7KViku46WiAB3zV6dy84" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/view/task" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Aulas\PSWEB\ProjetoDeSistemasWEB20.3-UFRPE\CELIO VIEIRA DE LIMA JUNIOR\ProjetoPHP\src\view\task" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02ccab2a-06a2-4eb1-95cd-6fb8f371e428" name="Default Changelist" comment="" />
+      <created>1602084805581</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602084805581</updated>
+      <workItem from="1602084809955" duration="1353000" />
+      <workItem from="1602087740121" duration="35026000" />
+      <workItem from="1602123194663" duration="899000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="450" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602094323310">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="450" y="184" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.860@0.0.1440.860" timestamp="1602094323310" />
+    <state x="555" y="353" key="NewPhpFileDialog" timestamp="1602089994325">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="555" y="353" key="NewPhpFileDialog/0.0.1440.860@0.0.1440.860" timestamp="1602089994325" />
+    <state x="388" y="140" width="1068" height="591" key="dock-window-1" timestamp="1602091961075">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="388" y="140" width="1068" height="591" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1602091961075" />
+    <state x="471" y="204" width="696" height="374" maximized="true" key="dock-window-2" timestamp="1602110138195">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="471" y="204" width="696" height="374" maximized="true" key="dock-window-2/0.0.1440.860@0.0.1440.860" timestamp="1602110138195" />
+    <state x="376" y="195" key="run.anything.popup" timestamp="1602119511858">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="376" y="195" key="run.anything.popup/0.0.1440.860@0.0.1440.860" timestamp="1602119511858" />
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1602119264463">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="383" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1602119264463" />
+  </component>
+</project>
