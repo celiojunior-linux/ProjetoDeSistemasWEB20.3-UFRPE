@@ -24,4 +24,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resource("/tasks", TaskController::class)->middleware("auth");
 Route::post("/tasks/{id}/complete",[TaskController::class, "complete" ])->name("complete")->middleware("auth");
 
-Route::get("/search", [TaskController::class, "search" ])->name("search");
+Route::get("/search", [TaskController::class, "search" ])->name("search")->middleware("auth");
+
+Route::delete("/deleteall/{user_id}", [TaskController::class, "deleteAll" ])->name("deleteall")->middleware("auth");

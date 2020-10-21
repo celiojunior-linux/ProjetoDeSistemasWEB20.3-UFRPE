@@ -36,8 +36,8 @@
                 </div>
             @endif
             <div class="container">
-                <h1 class="text-gray-600">Projeto Laravel aproveitando bastante dos recursos fornecidos,<br> de forma muito preguiçosa. Simples mais eficiente</h1>
-                <h3>celio.lima@ufrpe.br - 2ª V.A. - 2020.3</h3>
+                <h1 class="text-gray-600">Projeto Laravel aproveitando bastante dos recursos fornecidos,<br> de forma muito preguiçosa. Simples, mas eficiente.</h1>
+                <h3>celio.lima@ufrpe.br - 2ª V.A. (PSWEB) - 2020.3 - UFRPE-UAST</h3>
             </div>
         </div>
 

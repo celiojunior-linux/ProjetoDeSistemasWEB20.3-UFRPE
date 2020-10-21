@@ -16,10 +16,10 @@ class TaskController extends Controller
     public function index()
     {
         if(Auth::user()){
-            $all_tasks = TaskModel::all();
+            $all_tasks = TaskModel::where("user_id",Auth::user()->id)->get()->values();
             return view("task.index", compact("all_tasks"));
         }else{
-
+            return back();
         }
     }
 
@@ -72,6 +72,9 @@ class TaskController extends Controller
     public function edit($id)
     {
         $task = TaskModel::findOrFail($id);
+        if($task->user_id != Auth::user()->id){
+            return back();
+        }
         return view("task.edit", compact("task"));
     }
 
@@ -120,18 +123,24 @@ class TaskController extends Controller
             echo $content;
             return redirect()->route("tasks.index");
         }
-        $all = TaskModel::all();
+        $all = TaskModel::where("user_id",Auth::user()->id)->get()->values();
         $all_tasks = [];
         foreach($all as $task){
-            if(strpos($content, $task->title) !== false
-                or strpos($task->title, $content) !== false
-                or strpos($content, $task->desc) !== false
-                or strpos($task->desc, $content) !== false
-                or strpos($content, $task->deadline) !== false
-                or strpos($task->deadline, $content) !== false){
+            if(strpos(strtoupper($content), strtoupper($task->title)) !== false
+                or strpos(strtoupper($task->title), strtoupper($content)) !== false
+                or strpos(strtoupper($content), strtoupper($task->desc)) !== false
+                or strpos(strtoupper($task->desc), strtoupper($content)) !== false
+                or strpos(strtoupper($content), strtoupper($task->deadline)) !== false
+                or strpos(strtoupper($task->deadline), strtoupper($content)) !== false){
                     array_push($all_tasks, $task);
             }
         }
         return view("task.index", compact("all_tasks"));
+    }
+
+    public function deleteAll($userId)
+    {
+        TaskModel::where("user_id",Auth::user()->id)->delete();
+        return back();
     }
 }
